@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 import Carousel from '@/components/UI/Carousel/CarouselContainer'
 import Slide from '@/components/UI/Carousel/Slide'
