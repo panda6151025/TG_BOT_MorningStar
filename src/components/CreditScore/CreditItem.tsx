@@ -10,7 +10,6 @@ export type CreditItemProps = {
 }
 
 const CreditItem: React.FC<CreditItemProps> = ({
-  id,
   title,
   content,
   percent,

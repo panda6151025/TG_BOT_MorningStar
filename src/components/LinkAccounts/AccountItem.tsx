@@ -10,7 +10,6 @@ export type AccountItemProps = {
 }
 
 const AccountItem: React.FC<AccountItemProps> = ({
-  id,
   image,
   lastNum,
   name,

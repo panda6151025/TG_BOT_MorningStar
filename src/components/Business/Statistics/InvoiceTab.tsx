@@ -3,10 +3,6 @@ import ReactApexChart from 'react-apexcharts'
 import type { ApexOptions } from 'apexcharts'
 import { Typography } from '@mui/material'
 import { Link } from 'react-router-dom'
-import { invoices } from '@/pages/Business/Home'
-import type { InvoiceItemProps as InvoiceItemType } from '@/components/Invoices/InvoiceItem'
-import InvoiceItem from '@/components/Invoices/InvoiceItem'
-
 export type ItemType = {
   id: number
   amount: number
@@ -168,16 +164,6 @@ const InvoiceTab: React.FC = () => {
         >
           See All
         </Link>
-        {invoices.map((invoice: InvoiceItemType) => (
-          <InvoiceItem
-            key={invoice.id}
-            id={invoice.id}
-            name={invoice.name}
-            date={invoice.date}
-            amount={invoice.amount}
-            status={invoice.status}
-          />
-        ))}
       </div>
     </>
   )
