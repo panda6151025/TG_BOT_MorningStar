@@ -8,6 +8,10 @@ import opeboxImg from '@/assets/images/opebox.png'
 import clsboxImg from '@/assets/images/clsbox.png'
 import linkimg from '@/assets/images/linkimg.png'
 import tickimg from '@/assets/images/tickimg.png'
+import taskimg from '@/assets/images/taskimg.png'
+import farmimg from '@/assets/images/farmingimg.png'
+import friendimg from '@/assets/images/friendimg.png'
+import dashboardimg from '@/assets/images/dashboardimg.png'
 
 import tgImg from '@/assets/images/tgimg.png'
 
@@ -104,38 +108,38 @@ const Onboarding: React.FC = () => {
 
   return (
     <div className="h-[100vh]">
-      <div className="h-[90vh]">
+      <div className="h-[80vh]">
         <Carousel
           slides={slideRows}
           setCurrentSlide={setCurrentSlide}
           currentSlide={currentSlide}
         />
       </div>
-      <div className="h-[10vh] flex justify-around mb-4">
-        <Link
-          to={`/Main`}
-          className="bg-black text-white  border-solid border text-center rounded-[20px] h-[46px] w-[20%] block py-[15px] mt-2"
-        >
-          Farming
-        </Link>
-        <Link
-          to={`/Main`}
-          className="bg-black text-white border-solid border text-center rounded-[20px] h-[46px] w-[20%] block py-[15px] mt-2"
-        >
-          Task
-        </Link>
-        <Link
-          to={`/Main`}
-          className="bg-black text-white border-solid border text-center rounded-[20px] h-[46px] w-[20%] block py-[15px] mt-2"
-        >
-          Buddy
-        </Link>
-        <Link
-          to={`/Main`}
-          className="bg-black text-white  border-solid border text-center rounded-[20px] h-[46px] w-[27%] block py-[15px] mt-2"
-        >
-          Dashboard
-        </Link>
+      <div className="h-[20vh] flex justify-around pt-4 pb-2 pl-2 pr-2">
+        <div className="h-[80%] w-[23%] flex flex-col justify-center	items-center border-dashed border-2 border-indigo-600 ">
+          <img src={farmimg} className="h-[50%] w-[60%] "></img>
+          <span className="text-sm text-white hover:text-indigo-800">
+            Farming
+          </span>
+        </div>
+        <div className="h-[80%] w-[23%] flex flex-col justify-center items-center border-dashed border-2 border-indigo-600">
+          <img src={taskimg} className="h-[50%] w-[60%] "></img>
+          <span className="text-sm text-white hover:text-indigo-800">
+            Tasks
+          </span>
+        </div>
+        <div className="h-[80%] w-[23%] flex flex-col justify-center items-center border-dashed border-2 border-indigo-600">
+          <img src={friendimg} className="h-[50%] w-[60%] "></img>
+          <span className="text-sm text-white hover:text-indigo-800">
+            Friends
+          </span>
+        </div>
+        <div className="h-[80%] w-[23%] flex flex-col justify-center items-center border-dashed border-2 border-indigo-600">
+          <img src={dashboardimg} className="h-[50%] w-[60%] "></img>
+          <span className="text-sm text-white hover:text-indigo-800">
+            Dashboard
+          </span>
+        </div>
       </div>
     </div>
   )
