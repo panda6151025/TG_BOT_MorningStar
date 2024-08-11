@@ -22,7 +22,7 @@ const Slide: React.FC<SlideProps> = ({
         {slide.title}
       </h3>
       <div className=" h-[80%] w-full px-8 overflow-auto">
-        {index === 0 && <img className="w-full" src={slide.image} />}
+        {index === 0 && <img className="w-full h-full" src={slide.image} />}
         {index === 1 &&
           (Array.isArray(slide.content) ? slide.content : [slide.content]).map(
             (item, index) => (

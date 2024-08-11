@@ -6,7 +6,11 @@ const First: React.FC = () => {
   return (
     <>
       <Link to="/Main" className="block float-left">
-        <img src={FirstImg} alt="" />
+        <img
+          src={FirstImg}
+          alt=""
+          className="w-full h-full sm:w-screen sm:h-screen"
+        />
       </Link>
     </>
   )
