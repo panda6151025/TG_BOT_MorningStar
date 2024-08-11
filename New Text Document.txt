@@ -1,0 +1,12 @@
+{/* <div className="rounded-2xl bg-[rgb(50,41,24)] flex pt-2 pl-2 pb-2 pr-2">
+              <img src={WingsImg} alt="" className="w-[10%]" />
+              <div className="w-[80%] flex flex-col  justify-center text-white pl-4">
+                <span>Deliay check in</span>
+                <span className="pl-4 text-[#c3b18a]">+250</span>
+              </div>
+              <div className="flex items-center justify-center w-[20%] rounded-2xl bg-[rgb(229,174,67)]">
+                <span>
+                  <b>claim</b>
+                </span>
+              </div>
+            </div> */}
