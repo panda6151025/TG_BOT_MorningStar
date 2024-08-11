@@ -39,9 +39,18 @@ const Slide: React.FC<SlideProps> = ({
                     </span>
                   )}
                 </div>
-                <div className="flex items-center justify-center w-[10%]">
-                  <span className="text-2xl text-white">&#62;</span>
-                </div>
+                {item.symbol === 1 && (
+                  <div className="flex items-center justify-center w-[10%]">
+                    <span className="text-2xl text-white">&#62;</span>
+                  </div>
+                )}
+                {item.symbol === 2 && (
+                  <div className="flex items-center justify-center w-[20%] rounded-2xl bg-[rgb(229,174,67)]">
+                    <span>
+                      <b>claim</b>
+                    </span>
+                  </div>
+                )}
               </div>
             ),
           )}
