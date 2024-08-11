@@ -9,7 +9,7 @@ const First: React.FC = () => {
         <img
           src={FirstImg}
           alt=""
-          className="w-full h-full sm:w-screen sm:h-screen"
+          className="w-[100vw] h-[100vh] sm:w-screen sm:h-screen"
         />
       </Link>
     </>
