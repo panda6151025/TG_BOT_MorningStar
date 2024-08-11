@@ -116,29 +116,21 @@ const Onboarding: React.FC = () => {
         />
       </div>
       <div className="h-[20vh] flex justify-around pt-4 pb-2 pl-2 pr-2">
-        <div className="h-[80%] w-[23%] flex flex-col justify-center	items-center border-dashed border-2 border-indigo-600 ">
+        <div className="h-[80%] w-[23%] flex flex-col justify-center	items-center border-dashed border-2  hover:border-indigo-200">
           <img src={farmimg} className="h-[50%] w-[60%] "></img>
-          <span className="text-sm text-white hover:text-indigo-800">
-            Farming
-          </span>
+          <span className="text-sm text-white ">Farming</span>
         </div>
-        <div className="h-[80%] w-[23%] flex flex-col justify-center items-center border-dashed border-2 border-indigo-600">
+        <div className="h-[80%] w-[23%] flex flex-col justify-center	items-center border-dashed border-2  hover:border-indigo-200">
           <img src={taskimg} className="h-[50%] w-[60%] "></img>
-          <span className="text-sm text-white hover:text-indigo-800">
-            Tasks
-          </span>
+          <span className="text-sm text-white ">Tasks</span>
         </div>
-        <div className="h-[80%] w-[23%] flex flex-col justify-center items-center border-dashed border-2 border-indigo-600">
+        <div className="h-[80%] w-[23%] flex flex-col justify-center items-center border-dashed border-2  hover:border-indigo-200">
           <img src={friendimg} className="h-[50%] w-[60%] "></img>
-          <span className="text-sm text-white hover:text-indigo-800">
-            Friends
-          </span>
+          <span className="text-sm text-white ">Friends</span>
         </div>
-        <div className="h-[80%] w-[23%] flex flex-col justify-center items-center border-dashed border-2 border-indigo-600">
+        <div className="h-[80%] w-[23%] flex flex-col justify-center items-center border-dashed border-2  hover:border-indigo-200">
           <img src={dashboardimg} className="h-[50%] w-[60%] "></img>
-          <span className="text-sm text-white hover:text-indigo-800">
-            Dashboard
-          </span>
+          <span className="text-sm text-white ">Dashboard</span>
         </div>
       </div>
     </div>
