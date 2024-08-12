@@ -16,7 +16,6 @@ const Footer: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('')
   const navigate = useNavigate()
 
-  // Define the data as an array of FooterItem objects
   const footerItems: FooterItem[] = [
     {
       id: 'Farming',

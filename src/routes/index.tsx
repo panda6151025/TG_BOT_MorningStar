@@ -7,7 +7,7 @@ import {
 import LazyLoad from '@/components/UI/LazyLoad'
 
 const Onboarding = lazy(() => import('@/pages/Onboarding'))
-const Login = lazy(() => import('@/pages/Login'))
+const Login = lazy(() => import('@/pages/Tasks'))
 const Register = lazy(() => import('@/pages/Register'))
 const ConfirmOTP = lazy(() => import('@/pages/ConfirmOTP'))
 const First = lazy(() => import('@/pages/First'))
