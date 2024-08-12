@@ -36,7 +36,6 @@ const CarouselContainer: React.FC<CarouselContainerProps> = (
       }}
       indicatorContainerProps={{
         style: {
-          marginTop: '50px', // 5
           textAlign: 'center', // 4
         },
       }}

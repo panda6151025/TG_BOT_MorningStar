@@ -8,10 +8,6 @@ import opeboxImg from '@/assets/images/opebox.png'
 import clsboxImg from '@/assets/images/clsbox.png'
 import linkimg from '@/assets/images/linkimg.png'
 import tickimg from '@/assets/images/tickimg.png'
-import taskimg from '@/assets/images/taskimg.png'
-import farmimg from '@/assets/images/farmingimg.png'
-import friendimg from '@/assets/images/friendimg.png'
-import dashboardimg from '@/assets/images/dashboardimg.png'
 
 import tgImg from '@/assets/images/tgimg.png'
 
@@ -76,22 +72,6 @@ const slides: Array<SlideType> = [
   },
 ]
 
-export type CatagoryType = {
-  id: number
-  image: string
-  title: String
-  link: string
-}
-
-// const Catagories: Array<CatagoryType> = [
-//   {
-//     id: 0,
-//     image: tickimg,
-//     title: 'Task',
-//     link: '',
-//   },
-// ]
-
 const Onboarding: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
 
@@ -107,32 +87,12 @@ const Onboarding: React.FC = () => {
   })
 
   return (
-    <div className="h-[100vh]">
-      <div className="h-[80vh]">
-        <Carousel
-          slides={slideRows}
-          setCurrentSlide={setCurrentSlide}
-          currentSlide={currentSlide}
-        />
-      </div>
-      <div className="h-[20vh] flex justify-around pt-4 pb-2 pl-2 pr-2">
-        <div className="h-[80%] w-[23%] flex flex-col justify-center	items-center border-dashed border-2  hover:border-indigo-200">
-          <img src={farmimg} className="h-[50%] w-[60%] "></img>
-          <span className="text-sm text-white ">Farming</span>
-        </div>
-        <div className="h-[80%] w-[23%] flex flex-col justify-center	items-center border-dashed border-2  hover:border-indigo-200">
-          <img src={taskimg} className="h-[50%] w-[60%] "></img>
-          <span className="text-sm text-white ">Tasks</span>
-        </div>
-        <div className="h-[80%] w-[23%] flex flex-col justify-center items-center border-dashed border-2  hover:border-indigo-200">
-          <img src={friendimg} className="h-[50%] w-[60%] "></img>
-          <span className="text-sm text-white ">Friends</span>
-        </div>
-        <div className="h-[80%] w-[23%] flex flex-col justify-center items-center border-dashed border-2  hover:border-indigo-200">
-          <img src={dashboardimg} className="h-[50%] w-[60%] "></img>
-          <span className="text-sm text-white ">Dashboard</span>
-        </div>
-      </div>
+    <div className="h-[100%] w-[100%]">
+      <Carousel
+        slides={slideRows}
+        setCurrentSlide={setCurrentSlide}
+        currentSlide={currentSlide}
+      />
     </div>
   )
 }
