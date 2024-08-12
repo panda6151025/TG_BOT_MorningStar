@@ -7,9 +7,9 @@ import {
 import LazyLoad from '@/components/UI/LazyLoad'
 
 const Onboarding = lazy(() => import('@/pages/Onboarding'))
-const Login = lazy(() => import('@/pages/Tasks'))
-const Register = lazy(() => import('@/pages/Register'))
-const ConfirmOTP = lazy(() => import('@/pages/ConfirmOTP'))
+const Tasks = lazy(() => import('@/pages/Tasks'))
+const Friends = lazy(() => import('@/pages/Friends'))
+const Dashboard = lazy(() => import('@/pages/Dashboard'))
 const First = lazy(() => import('@/pages/First'))
 const Footer = lazy(() => import('@/components/Layout/Footer'))
 type LayoutProps = {
@@ -58,7 +58,7 @@ const Routes: React.FC = () => {
       path: '/Tasks',
       element: (
         <CenterLayout>
-          <Login />
+          <Tasks />
         </CenterLayout>
       ),
     },
@@ -66,7 +66,7 @@ const Routes: React.FC = () => {
       path: '/Friends',
       element: (
         <CenterLayout>
-          <Register />
+          <Friends />
         </CenterLayout>
       ),
     },
@@ -74,7 +74,7 @@ const Routes: React.FC = () => {
       path: '/Dashboard',
       element: (
         <CenterLayout>
-          <ConfirmOTP />
+          <Dashboard />
         </CenterLayout>
       ),
     },
