@@ -6,10 +6,13 @@ import {
 } from 'react-router-dom'
 import LazyLoad from '@/components/UI/LazyLoad'
 
-const Onboarding = lazy(() => import('@/pages/Onboarding'))
-const Tasks = lazy(() => import('@/pages/Tasks'))
+const Barse = lazy(() => import('@/pages/Barse'))
+const Mining = lazy(() => import('@/pages/Mining'))
 const Friends = lazy(() => import('@/pages/Friends'))
-const Dashboard = lazy(() => import('@/pages/Dashboard'))
+const Playground = lazy(() => import('@/pages/Playground'))
+const AirDrop = lazy(() => import('@/pages/AirDrop'))
+const Aufugaben = lazy(() => import('@/pages/Aufugaben'))
+
 const First = lazy(() => import('@/pages/First'))
 const Footer = lazy(() => import('@/components/Layout/Footer'))
 type LayoutProps = {
@@ -26,7 +29,7 @@ const CenterLayout: React.FC<LayoutProps> = ({ children }) => {
       <div className="flex items-center justify-center flex-grow h-[80vh] w-[100%]">
         {children}
       </div>
-      <div className="h-[20vh]">
+      <div>
         <Footer />
       </div>
     </div>
@@ -47,18 +50,26 @@ const Routes: React.FC = () => {
 
   const businessRoutes: RouteObject[] = [
     {
-      path: '/Main',
+      path: '/Barse',
       element: (
         <CenterLayout>
-          <Onboarding />
+          <Barse />
         </CenterLayout>
       ),
     },
     {
-      path: '/Tasks',
+      path: '/Mining',
       element: (
         <CenterLayout>
-          <Tasks />
+          <Mining />
+        </CenterLayout>
+      ),
+    },
+    {
+      path: '/Playground',
+      element: (
+        <CenterLayout>
+          <Playground />
         </CenterLayout>
       ),
     },
@@ -71,10 +82,18 @@ const Routes: React.FC = () => {
       ),
     },
     {
-      path: '/Dashboard',
+      path: '/Aufugaben',
       element: (
         <CenterLayout>
-          <Dashboard />
+          <Aufugaben />
+        </CenterLayout>
+      ),
+    },
+    {
+      path: '/AirDrop',
+      element: (
+        <CenterLayout>
+          <AirDrop />
         </CenterLayout>
       ),
     },
