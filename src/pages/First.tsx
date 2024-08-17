@@ -8,7 +8,7 @@ const First: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate('/Barse')
-    }, 1000)
+    }, 2000)
 
     return () => clearTimeout(timer)
   }, [navigate])
